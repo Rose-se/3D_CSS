@@ -136,6 +136,10 @@ GameObject:
   - component: {fileID: 186027815}
   - component: {fileID: 186027817}
   - component: {fileID: 186027818}
+
+  - component: {fileID: 186027819}
+
+
   m_Layer: 0
   m_Name: Rocks (1)
   m_TagString: Untagged
@@ -258,6 +262,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5700534652025671708, guid: b62e480eb4c41a746a49f49408e26dee, type: 3}
+
+--- !u!114 &186027819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186027813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
+
 --- !u!1 &336411537
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,7 +308,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4411722482218141564}
+
+  m_Father: {fileID: 0}
+
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &389007667
 GameObject:
@@ -318,7 +341,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 661648245}
+nakharin/Shader
+
   - {fileID: 186027814}
   - {fileID: 502096524}
   m_Father: {fileID: 0}
@@ -336,6 +360,9 @@ GameObject:
   - component: {fileID: 502096527}
   - component: {fileID: 502096526}
   - component: {fileID: 502096525}
+akharin/Shader
+  - component: {fileID: 502096529}
+
   m_Layer: 0
   m_Name: Rocks (2)
   m_TagString: Untagged
@@ -458,6 +485,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 502096523}
   m_Mesh: {fileID: -2106710818156635499, guid: b62e480eb4c41a746a49f49408e26dee, type: 3}
+
+--- !u!114 &502096529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502096523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
+
 --- !u!1 &570383813
 GameObject:
   m_ObjectHideFlags: 0
@@ -1146,6 +1190,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6641464540307945647, guid: 55769cb4f53d24647b1c4b51cda810c5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8416786149854874977}
+    - targetCorrespondingSourceObject: {fileID: 6641464540307945647, guid: 55769cb4f53d24647b1c4b51cda810c5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8416786149854874978}
   m_SourcePrefab: {fileID: 100100000, guid: 55769cb4f53d24647b1c4b51cda810c5, type: 3}
 --- !u!4 &4411722482218141564 stripped
 Transform:
@@ -1184,6 +1231,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 18
   m_CollisionDetection: 0
+--- !u!114 &8416786149854874978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8416786149854874971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1194,3 +1256,6 @@ SceneRoots:
   - {fileID: 570383816}
   - {fileID: 1802700944}
   - {fileID: 389007668}
+
+  - {fileID: 336411538}
+
